@@ -1,0 +1,122 @@
+@import "mocha.css";
+
+* {
+  font-family: "0xProto Nerd Font";
+  font-size: 17px;
+  min-height: 0;
+}
+
+#waybar {
+  background: transparent;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  background-color: @surface0;
+  margin: 2px 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.1rem;
+}
+
+#workspaces button.active {
+  color: @sky;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
+}
+
+#tray,
+#clock,
+#pulseaudio,
+#custom-updates,
+#cpu,
+#memory,
+#window,
+#custom-notification,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.2rem 1rem;
+  margin: 2px 0;
+}
+
+#custom-notification {
+  color: @sapphire;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+#custom-updates {
+  color: @mauve;
+  padding-right: 0.4rem;
+  margin-right: 0;
+  border-radius: 1rem 0 0 1rem;
+}
+
+#cpu {
+  color: @green;
+  padding-right: 0.4rem;
+  margin-right: 0;
+  padding-left: 0.4rem;
+  margin-left: 0;
+}
+
+#memory {
+  color: @yellow;
+  padding-left: 0.4rem;
+  margin-left: 0;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: 0.5rem;
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+#custom-lock {
+  border-radius: 1rem;
+  color: @lavender;
+}
+
+#custom-power {
+  margin-left: 0.5rem;
+  padding-right: 1.2rem;
+  /* Needs padding on the right side because power glyph is off center */
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+  color: @red;
+}
+
+#window {
+  color: @peach;
+  border-radius: 1rem;
+}
+
+#tray {
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+tooltip * {
+  background: transparent;
+}
+
+tooltip.background {
+  background: rgba(49, 50, 68, 0.8);
+}
