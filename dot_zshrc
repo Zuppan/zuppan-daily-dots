@@ -1,0 +1,44 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd beep extendedglob nomatch notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/zuruzuru/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Keybinds
+# --- Basic editing ---
+bindkey "^[[3~" delete-char          # Delete
+bindkey "^H" backward-delete-char    # Backspace
+bindkey "^[[2~" quoted-insert        # Insert (rarely used)
+
+# --- Line navigation ---
+bindkey "^[[H" beginning-of-line     # Home
+bindkey "^[[F" end-of-line           # End
+
+# --- Word navigation ---
+bindkey "^[[1;5C" forward-word       # Ctrl+Right
+bindkey "^[[1;5D" backward-word      # Ctrl+Left
+
+# --- History navigation ---
+bindkey "^[[5~" beginning-of-history # Page Up
+bindkey "^[[6~" end-of-history       # Page Down
+
+# --- Completion ---
+bindkey '^I' expand-or-complete      # Tab completion
+
+
+fastfetch
+
+
+# Fast Syntax Hilighting
+source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh
+
+# Starship
+eval "$(starship init zsh)"
