@@ -12,8 +12,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# $EDITOR
+# Environment Variables
 export EDITOR=micro
+
+#Disable hilight
+zle_highlight+=(paste:none)
 
 # Keybinds
 # --- Basic editing ---
