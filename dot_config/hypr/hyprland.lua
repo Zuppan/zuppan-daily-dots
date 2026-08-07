@@ -347,3 +347,17 @@ hl.window_rule({
     match = { class = "clipryx" },
     pin   = true,
 })
+
+hl.window_rule({
+    name  = "skyrim",
+    match = {
+        class        = "^steam_app_489830$",
+        initial_title = "^Skyrim Special Edition$",
+    },
+
+    workspace    = "4 silent",
+    fullscreen   = true,
+    immediate    = true,          -- allow tearing; needs allow_tearing globally
+    idle_inhibit = "fullscreen",
+    content      = "game",
+})
